@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+   <body>
+            
+            
+            <p>Welcome {{session['name']}}</p>            
+      <table border = 1>
+
+            {% for key1 in result2 %}
+                  <tr>
+                     <th> {{ key1 }} </th>
+                     
+                     
+                  </tr>
+            {% endfor %}
+         
+      {% for key in result %}
+            <tr>
+               <th> {{ key }} </th>
+               
+               
+            </tr>
+      {% endfor %}
+         
+      </table>
+      
+   </body>
+</html>

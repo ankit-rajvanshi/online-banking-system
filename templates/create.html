@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/addEmployee_style.css') }}">
+<title>Customer Bank Account</title>
+</head>
+<body>
+<div class="modal-content">
+        {% if error %}
+
+            <p>There are errors in Form. Please fill again</p>
+           
+        {% endif %}
+<form action="/create" method="post">
+    <div class="container2">
+    <label>Username</label>
+    <input type="text" name="user_id" placeholder="Username" required>
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Name" required>
+    <label>Age</label>
+    <input type="text" name="age" placeholder="Age" required>
+    <label>Gender</label>
+    <input type="text" name="gender" placeholder="Gender" required>
+    <label>Address</label>
+    <input type="text" name="address" placeholder="Address" required>
+    <label>Email ID</label>
+    <input type="text" name="email" placeholder="Email Id" required>
+    <label>Mobile Number</label>
+    <input type="text" name="mobile" placeholder="Mobile Number" required>
+    
+    <label>Account Opening Date (YYYY-MM-DD)</label>
+    <input type="text" name="opening_date" placeholder="Account Opening Date" required>
+    <label>Account Number</label>
+    <input type="text" name="account_number" placeholder="Account Number(11 digits)" required>
+    <label>Pan Number</label>
+    <input type="text" name="pancard" placeholder="Pan Number" required>
+    <label>Aadhaar Number</label>
+    <input type="text" name="aadhaar" placeholder="Aadhar Number" required>
+    <label>Password</label>
+    <input type="text" name="password" placeholder="password" required>
+    <label>Initial Amount</label>
+    <input type="text" name="initial_amount" placeholder="Initial Amount(Min 5000)" required>
+    <label>Verification of Documents</label>	
+    <input type="radio" name="verify" value="Yes" required>
+    <input type="submit" value="Submit">
+    </div>
+</form>
+</div>
+</body>
+</html>
