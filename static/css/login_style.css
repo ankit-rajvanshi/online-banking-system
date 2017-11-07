@@ -43,7 +43,7 @@ body {
 
 /* Set a style for all buttons */
 button {
-    background-color: #199FC0;
+    background-color: #647068;
     color: white;
     padding: 2% 3%;
     margin: 3% 0;
@@ -88,8 +88,8 @@ color: white;
     margin: 10% auto auto auto; /* 5% from the top, 15% from the bottom and centered */
     border-radius: 3%;
     width: 30%;
-    background-color: #750E53; /* Fallback color */
-    background-color: rgba(121, 17, 95, 0.3); /* Black w/ opacity */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
 }
 
 

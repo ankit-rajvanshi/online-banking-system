@@ -12,12 +12,14 @@
 	<h2>Login</h2>
 	</div>
 	<div class="container2">
-	<form action="/login" method="post">
+	<form action="/login" method="POST">
 	<label>UserID</label>
-	<input type="text" name="user_id" placeholder="User ID">
+	<input type="text" name="user_id" placeholder="User ID" required>
 	<label>Password</label>
-	<input type="password" name="password" placeholder="Password">
-	<p><input class="button" type = "submit" value = "submit" /></p>
+	<input type="password" name="password" placeholder="Password" required>
+	<!--<input class="button" type="submit" style="vertical-align:middle" value="Sign in">-->
+	<button type="submit" name="submit" value="submit">Sign In</button>
+	<!--<p><input class="button" type = "submit" value = "Login" /></p>-->
 	<!--<button type="submit">Login</button> -->
 	<!--input type="Submit" value="Submit"-->
 	</form>
@@ -26,3 +28,8 @@
 
 </body>
 </html>
+
+
+
+
+
